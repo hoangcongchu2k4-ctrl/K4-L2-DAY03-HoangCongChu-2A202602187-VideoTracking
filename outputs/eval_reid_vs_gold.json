@@ -1,0 +1,253 @@
+{
+  "clip": "clip_01",
+  "frames": 190,
+  "iou_threshold": 0.5,
+  "pred_file": "E:\\AI_Vinuni\\Download_AI\\K4-L2-L3-DAY03-VideoTracking-main\\K4-L2-L3-DAY03-VideoTracking-main\\outputs\\model_reid_clip_01.txt",
+  "gt_file": "E:\\AI_Vinuni\\Download_AI\\K4-L2-L3-DAY03-VideoTracking-main\\K4-L2-L3-DAY03-VideoTracking-main\\gold\\clip_01\\gt.txt",
+  "pred_label": "yolo26n.pt + BoT-SORT + ReID treatment",
+  "gt_label": "gold clip_01",
+  "metrics": {
+    "HOTA": 0.6695,
+    "DetA": 0.6156,
+    "AssA": 0.7306,
+    "LocA": 0.8217,
+    "IDF1": 0.8562,
+    "IDTP": 536,
+    "IDFP": 102,
+    "IDFN": 78,
+    "MOTA": 0.7085,
+    "MOTP": 0.8008,
+    "IDSW": 1,
+    "FP": 101,
+    "FN": 77,
+    "GT_boxes": 614,
+    "PRED_boxes": 638
+  },
+  "gate": {
+    "checks": {
+      "IDF1": {
+        "value": 0.8562300319488818,
+        "required": 0.8,
+        "passed": true
+      },
+      "MOTA": {
+        "value": 0.7084690553745928,
+        "required": 0.75,
+        "passed": false
+      },
+      "MOTP": {
+        "value": 0.8007640086348782,
+        "required": 0.7,
+        "passed": true
+      }
+    },
+    "passed": false
+  },
+  "diagnostics": {
+    "missed_gt_tracks": [],
+    "fragmented_gt_tracks": [
+      {
+        "gt_track": 5,
+        "pred_tracks": [
+          18,
+          17
+        ],
+        "frames_each": {
+          "18": 50,
+          "17": 1
+        },
+        "gt_length": 68
+      },
+      {
+        "gt_track": 7,
+        "pred_tracks": [
+          29,
+          39
+        ],
+        "frames_each": {
+          "29": 79,
+          "39": 3
+        },
+        "gt_length": 86
+      }
+    ],
+    "partially_covered_gt_tracks": [
+      {
+        "gt_track": 6,
+        "covered": 38,
+        "gt_length": 76,
+        "ratio": 0.5
+      },
+      {
+        "gt_track": 5,
+        "covered": 51,
+        "gt_length": 68,
+        "ratio": 0.75
+      }
+    ],
+    "ghost_pred_tracks": [
+      {
+        "pred_track": 7,
+        "reason": "không khớp track tham chiếu nào",
+        "frames": [
+          16,
+          116
+        ],
+        "length": 43
+      },
+      {
+        "pred_track": 27,
+        "reason": "không khớp track tham chiếu nào",
+        "frames": [
+          106,
+          121
+        ],
+        "length": 16
+      },
+      {
+        "pred_track": 38,
+        "reason": "không khớp track tham chiếu nào",
+        "frames": [
+          158,
+          178
+        ],
+        "length": 16
+      },
+      {
+        "pred_track": 24,
+        "reason": "không khớp track tham chiếu nào",
+        "frames": [
+          104,
+          104
+        ],
+        "length": 1
+      },
+      {
+        "pred_track": 26,
+        "reason": "không khớp track tham chiếu nào",
+        "frames": [
+          105,
+          105
+        ],
+        "length": 1
+      },
+      {
+        "pred_track": 28,
+        "reason": "không khớp track tham chiếu nào",
+        "frames": [
+          107,
+          107
+        ],
+        "length": 1
+      }
+    ],
+    "id_switches": [
+      {
+        "frame": 87,
+        "gt_track": 5,
+        "from_track": 17,
+        "to_track": 18
+      }
+    ],
+    "loose_boxes": [
+      {
+        "frame": 166,
+        "gt_track": 8,
+        "pred_track": 34,
+        "iou": 0.505
+      },
+      {
+        "frame": 108,
+        "gt_track": 7,
+        "pred_track": 29,
+        "iou": 0.508
+      },
+      {
+        "frame": 116,
+        "gt_track": 6,
+        "pred_track": 31,
+        "iou": 0.514
+      },
+      {
+        "frame": 92,
+        "gt_track": 5,
+        "pred_track": 18,
+        "iou": 0.532
+      },
+      {
+        "frame": 155,
+        "gt_track": 6,
+        "pred_track": 31,
+        "iou": 0.536
+      },
+      {
+        "frame": 165,
+        "gt_track": 8,
+        "pred_track": 34,
+        "iou": 0.547
+      },
+      {
+        "frame": 137,
+        "gt_track": 5,
+        "pred_track": 18,
+        "iou": 0.548
+      },
+      {
+        "frame": 109,
+        "gt_track": 7,
+        "pred_track": 29,
+        "iou": 0.559
+      },
+      {
+        "frame": 119,
+        "gt_track": 6,
+        "pred_track": 31,
+        "iou": 0.562
+      },
+      {
+        "frame": 137,
+        "gt_track": 8,
+        "pred_track": 34,
+        "iou": 0.564
+      },
+      {
+        "frame": 189,
+        "gt_track": 1,
+        "pred_track": 3,
+        "iou": 0.572
+      },
+      {
+        "frame": 11,
+        "gt_track": 2,
+        "pred_track": 1,
+        "iou": 0.589
+      },
+      {
+        "frame": 164,
+        "gt_track": 8,
+        "pred_track": 34,
+        "iou": 0.59
+      },
+      {
+        "frame": 93,
+        "gt_track": 5,
+        "pred_track": 18,
+        "iou": 0.593
+      },
+      {
+        "frame": 44,
+        "gt_track": 3,
+        "pred_track": 2,
+        "iou": 0.598
+      },
+      {
+        "frame": 87,
+        "gt_track": 5,
+        "pred_track": 18,
+        "iou": 0.599
+      }
+    ],
+    "n_gt_tracks": 8,
+    "n_pred_tracks": 16
+  }
+}
